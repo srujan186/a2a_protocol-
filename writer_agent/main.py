@@ -52,7 +52,7 @@ request_handler = DefaultRequestHandler(
 
 app = FastAPI(title="Writer Agent (A2A)")
 
-add_a2a_routes_to_fastapi(
+add_a2a_routes_to_fastapi(  
     app,
     agent_card_routes=create_agent_card_routes(agent_card),
     jsonrpc_routes=create_jsonrpc_routes(request_handler, rpc_url="/"),
